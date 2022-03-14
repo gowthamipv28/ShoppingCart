@@ -79,7 +79,7 @@ public class ShoppingCartTest {
         System.out.println("Total bill amount is " + cart1.total());
         double totalAfterDed = 0.00;
 
-        // Applying offer : discount of 5% if cost of customer is >= 100
+       
         if (cart1.total() >= 100)
             totalAfterDed = cart1.total() - (cart1.total() * 0.5);
         wallet.deductBalance(totalAfterDed);
